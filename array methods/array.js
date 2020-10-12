@@ -43,7 +43,9 @@ let sentence = 'Ala ma kota, kot ma Ale';
 
 // ... - spread oparator
 // const tryIt =[...userName,...userAge];
-// console.log(tryIt); 
+// console.log(...userName); 
+// console.log(tryIt);
+
 
 
 // SLICE  get some part of an array, returns this part
