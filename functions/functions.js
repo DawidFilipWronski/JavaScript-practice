@@ -74,13 +74,24 @@
 // 2. Write a JavaScript function that checks whether a passed string is palindrome or not? 
 // A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
 
-const isPalindrome = (word) =>{
-    word = word.toUpperCase();
-    word = word.split(' ').join('');
-    let result = word.split('').reverse().join('');  
-    console.log(result);    
-    return result === word;
-}
-console.log(isPalindrome('nurses run'));
+// const isPalindrome = (word) =>{
+//     word = word.toUpperCase();
+//     word = word.split(' ').join('');
+//     let result = word.split('').reverse().join('');  
+//     console.log(result);    
+//     return result === word;
+// }
+// console.log(isPalindrome('nurses run'));
 
+//3. Arguments object
 
+ 
+
+// const myList = function(separator){
+//     let list = '';
+//     for(let i = 1; i < arguments.length; i++){
+//         list += arguments[i] + separator;
+//     }
+//     return list;
+// }
+// console.log(myList(',','banana','apple','cucumber','orange'));
