@@ -43,3 +43,44 @@
 // return how much parameters is declared on function declaration
 // console.log(logText.length);
 
+
+// 1. Write a JavaScript function that reverse a number. 
+// Example x = 32243;
+// Expected Output : 34223
+
+// const toReverse = (reverseIt) =>{
+//     reverseIt += '';
+//     return reverseIt.split('').reverse().join('') * 1; 
+// }
+// console.log(toReverse(32243));
+
+//LONG VERSION
+
+// const reverseIt = (toReverse) => {
+//     toReverse = toReverse + '';
+//     // console.log(toReverse);  
+//     // console.log(typeof toReverse); 
+//     // console.log(toReverse);    
+//     let result = toReverse.split('');
+//     result = result.reverse();
+//     result = result.join('');
+//     result *=1;
+//     return result;    
+//     // console.log(result);
+//     // console.log(typeof result);    
+// }
+// console.log(reverseIt(32243));
+
+// 2. Write a JavaScript function that checks whether a passed string is palindrome or not? 
+// A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+
+const isPalindrome = (word) =>{
+    word = word.toUpperCase();
+    word = word.split(' ').join('');
+    let result = word.split('').reverse().join('');  
+    console.log(result);    
+    return result === word;
+}
+console.log(isPalindrome('nurses run'));
+
+
