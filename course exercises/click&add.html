@@ -10,8 +10,12 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+        .clearfix::after{
+            content: '';
+            clear: both;
+            display: block;
         }
+        
         .addBtn{
             display: block;
             margin: 20px auto;
@@ -20,17 +24,19 @@
             font-family: roboto, sans-serif;                  
         }
         .forDivs{
-            display: flex;
-            flex-wrap: wrap;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-between; */
             width: 95vw;
             margin: 0 auto;
-            justify-content: space-between;
         }
+
         div,
         .normal{
+            float: left;
             height: 17vw;
-            flex-basis: 17vw;
-            margin-bottom: 2.5vw;
+            width: 17vw;
+            margin: 0 1vw 2.5vw 1vw;
             text-align: center;
             font-size: 30px;
             line-height: 17vw;
@@ -48,7 +54,7 @@
 </head>
 <body>
     <button class = "addBtn" >Click!</button>    
-    <section class="forDivs">
+    <section class="forDivs clearfix">
         
     </section>
     
