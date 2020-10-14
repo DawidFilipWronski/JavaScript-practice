@@ -1,11 +1,11 @@
 
 //selecting items from DOM with new and older methods;
 
-const header2 = document.querySelector('h2');
-const header2Alter = document.querySelector('h1~ul+h2')
-const header1 = document.getElementById('header');
-const li = document.getElementsByTagName('li');
-const loremP = document.getElementsByClassName('lorem');
+// const header2 = document.querySelector('h2');
+// const header2Alter = document.querySelector('h1~ul+h2')
+// const header1 = document.getElementById('header');
+// const li = document.getElementsByTagName('li');
+// const loremP = document.getElementsByClassName('lorem');
 
 // textContent and innerHtml practice
 
@@ -16,6 +16,15 @@ const loremP = document.getElementsByClassName('lorem');
 // console.log(loremP);
 // console.log(header2.textContent);
 // console.log(header2Alter.textContent);
+
+//create element
+
+const newDiv = document.createElement('div');
+newDiv.textContent = "Text for created div";
+newDiv.className = 'created';
+newDiv.style.color = 'red';
+document.querySelector('h1').appendChild(newDiv);
+
 
 
 
