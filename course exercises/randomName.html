@@ -8,22 +8,51 @@
         body{
             text-align: center;
         }
-        button{
+        .draw{
             padding: 20px 40px;
             margin: 30px;
             font-size: 26px;
             text-transform: uppercase;
             border: solid 4px green;            
         }
-        div{
+        .delete{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+            cursor: pointer;
+        }
+        .delete span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;            
+            transform: translate(-50%,-50%);
+            height: 6px;
+            background-color: #fff;
+        }
+        .delete span:nth-child(1){
+            transform: translate(-50%,-50%) rotate(45deg)          
+        }
+        .delete span:nth-child(2){
+            transform: translate(-50%,-50%) rotate(-45deg)          
+        }
+        
+        .result{
             text-align: center;
             font-size: 30px;
         }
     </style>
 </head>
 <body>
-    <button>Draw name!</button>
-    <div></div>
+    <button class = "draw">Draw name!</button>
+    <div class="delete" title = "Delete that name">
+        <span></span>
+        <span></span>
+    </div>
+    <div class = "result"></div>
     <script src="randomName.js"></script>
 </body>
 </html>
