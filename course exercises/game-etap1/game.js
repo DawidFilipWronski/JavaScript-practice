@@ -43,10 +43,17 @@ function choice (){
     this.style.boxShadow = '0 0 0 10px black';
     playerChoice.textContent = game.playerMove;
 }
+function resetChoice() {
+    document.querySelector(`[data-option='${game.playerMove}']`).style.boxShadow = '';
+    game.playerMove = '';
+}
 /* draw ai choice when click play, change game counter in board object,
 set value on text content, compare player choice to ai choice and get a winner. Modifies wins, failures and draws on board object and print it on text content
 */
 const winner = () =>{
+    if(!game.playerMove){
+        return alert('wybierz dłoń!');
+    }
     game.aiMove = drawForAi(); 
     board.gameCounter++;   
     aiChoice.textContent = game.aiMove;
@@ -90,6 +97,7 @@ const winner = () =>{
     draws.textContent = board.draws;
     failures.textContent = board.failures;
     games.textContent = board.gameCounter;
+    resetChoice();
 }
 //event listeners 
 hands.forEach(hand =>{
