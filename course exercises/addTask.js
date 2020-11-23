@@ -2,8 +2,11 @@ const textInput = document.querySelector('input');
 const button = document.querySelector('button');
 const ul = document.querySelector('ul');
 const span = document.querySelector('span');
+const search = document.querySelector('.search');
+const li = document.querySelectorAll('li');
 let index = 0;
 let startMessage = true;
+let arr = [];
 
 const add = () => {
     const li = document.createElement('li');
@@ -17,11 +20,11 @@ const add = () => {
     li.appendChild(deleteBtn).textContent = 'usun';
     deleteBtn.setAttribute('data-key', index);
     deleteBtn.addEventListener('click', remove);
-
     index++;
     updateTaskNumber();
+    arr.push(textInput.value);
     textInput.value = '';
-   
+    console.log(arr);   
 }
 const remove = (e) => {
     const clickKey = e.target.dataset.key;
@@ -46,10 +49,18 @@ const updateTaskNumber = (message) => {
 const resetStyle = (e) => {
         textInput.style.border = 'solid 2px black';
 }
-
+const check = (e) => {   
+    const searchText = e.target.value;
+    let tasks = [...li];
+    tasks = tasks.filter(task => task.textContent.includes(searchText));
+    ul.textContent = '';
+    tasks.forEach(task => ul.appendChild(task)); 
+    console.log(searchText);   
+}
 updateTaskNumber('Add some task to your list!');
 button.addEventListener('click', add);
 textInput.addEventListener('keydown', resetStyle);
+search.addEventListener('input', check);
 
 
 
