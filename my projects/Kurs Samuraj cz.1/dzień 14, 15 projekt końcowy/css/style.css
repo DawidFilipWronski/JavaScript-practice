@@ -1,0 +1,638 @@
+/*
+font-family: 'Saira Condensed', sans-serif;
+font-family: 'Saira', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+
+/*320px i mniej*/
+.welcome {
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.welcome header {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    background-color: #29a6dc;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.welcome header p {
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.welcome header h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.welcome header h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 0px;
+
+}
+
+.welcome header button {
+    padding: 2px 15px;
+    margin-top: 5%;
+    border: solid 1px white;
+    background-color: #29a6dc;
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.welcome header div:first-child {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 8%;
+}
+
+
+.welcome header img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+}
+
+@media(orientation: landscape) {
+    .welcome header img {
+        bottom: 0;
+        right: -5%;
+        width: 50%;
+    }
+
+    .welcome header div:first-child {
+        top: 15%;
+        left: 8%;
+        width: auto;
+    }
+}
+
+/* 411 width i wieksze*/
+@media (min-width: 411px) and (orientation:portrait) {
+
+
+    .welcome header div:first-child {
+        left: 0;
+        top: 12%;
+    }
+
+    .welcome header button {
+        font-size: 16px;
+        margin-top: 8%;
+    }
+
+    .welcome header h1 {
+        font-size: 26px;
+
+    }
+
+    .welcome header h2 {
+        font-size: 26px;
+
+    }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+    .welcome header div:first-child {
+        left: 8%;
+        top: 20%;
+    }
+}
+
+/*desktop*/
+@media(min-width: 1024px) and (orientation: landscape) {
+
+    .welcome header div:first-child {
+        left: 7%;
+        top: 30%;
+        text-align: left;
+    }
+
+    .welcome header p {
+        font-size: 60px;
+        ;
+    }
+
+    .welcome header button {
+        font-size: 22px;
+        margin-top: 8%;
+        cursor: pointer;
+        border: solid white 3px;
+        transition: .3s;
+
+    }
+
+    .welcome header button:hover {
+        background-color: white;
+        color: #111;
+
+    }
+
+    .welcome header h1 {
+        font-size: 40px;
+
+    }
+
+    .welcome header h2 {
+        font-size: 40px;
+
+    }
+
+    .welcome header img {
+        max-width: 65%;
+        right: -15%;
+        bottom: 0;
+    }
+}
+
+
+/*SECTION 2 - OFFER*/
+
+
+.offer {
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+}
+
+.offer h1,
+.offer h2 {
+    text-transform: uppercase;
+}
+
+.offer h1 {
+    padding: 10% 15% 0 15%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.offer h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2% 15% 0 15%;
+}
+
+.offer p {
+    padding: 3% 7% 0 7%;
+    font-size: 12px;
+}
+
+.offer img {
+    max-width: 200px;
+    height: 120px;
+    top: 0;
+    left: 10;
+}
+
+/*SECTION 2 DESKTOP > 1024PX WIDTH*/
+
+@media (min-width: 1024px) {
+    .offer {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .offer h1 {
+        padding: 5% 5% 0 5%;
+        font-size: 40px;
+    }
+
+    .offer h2 {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    .offer p {
+        font-family: 'Saira', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .offer div {
+        float: left;
+        max-width: 33.3%;
+    }
+
+    .offer img {
+        transition: .3s;
+    }
+
+    .offer div:hover img {
+        opacity: 0.5;
+
+    }
+}
+
+/*SECTION 3 - MYPROJECTS
+320PX WIDTH I MNIEJ
+*/
+section.myprojects {
+    background-color: #1e1e1e;
+    color: #eee;
+    padding-bottom: 5%;
+}
+
+section.myprojects h1 {
+    padding: 7% 6%;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+
+}
+
+section.myprojects img {
+    width: 100%;
+}
+
+section.myprojects .project-description h2,
+section.myprojects .project-description p {
+    font-weight: 400;
+    font-family: 'Saira', sans-serif;
+
+
+}
+
+section.myprojects .project-description h2 {
+    padding: 9% 0% 2% 8%;
+    border-bottom: 1px solid;
+    max-width: 85%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.myprojects .project-description p {
+    line-height: 115%;
+    padding: 6% 8% 8% 8%;
+    font-size: 12px;
+}
+
+section.myprojects .project-description {
+    margin: -5px 0 0 0;
+
+}
+
+section.myprojects .project-container .project-description:nth-of-type(2) {
+    background-color: #ff4f2c;
+    margin-bottom: 5%;
+}
+
+section.myprojects .project-container:nth-of-type(2) .project-description {
+    background-color: #0170ba;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    section.myprojects h1 {
+        font-size: 30px;
+        padding: 7% 10%;
+    }
+
+    section.myprojects .project-description h2 {
+        font-size: 24px;
+    }
+
+    section.myprojects .project-description p {
+        font-size: 14px;
+        line-height: 125%;
+    }
+}
+
+
+@media (min-width: 768px) and (orientation: portrait) {
+    section.myprojects h1 {
+        font-size: 58px;
+        padding: 7% 10%;
+
+    }
+
+    section.myprojects .project-description h2 {
+        font-size: 40px;
+        border-width: 3px;
+    }
+
+    section.myprojects .project-description p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    section.myprojects {
+        padding: 0 5% 2% 5%;
+        margin-top: 3%
+    }
+
+    section.myprojects h1 {
+        font-size: 60px;
+    }
+
+    .web,
+    .project-description {
+        float: left;
+        width: 50%;
+
+    }
+
+    .web img {
+        display: block;
+        width: 100%;
+    }
+
+    section.myprojects .project-container {
+        margin-bottom: 5%;
+    }
+
+    section.myprojects .project-description {
+        margin: 0;
+
+    }
+
+
+
+
+    section.myprojects .project-container .project-description:nth-of-type(2) {
+        background-color: #ff4f2c;
+        margin: 0;
+    }
+
+    section.myprojects .project-container .project-description:nth-of-type(odd) {
+        background-color: #ff4f2c;
+        margin: 0;
+    }
+
+    section.myprojects .project-container:nth-of-type(even) .project-description {
+        background-color: #0170ba;
+        margin: 0;
+
+    }
+
+    section.myprojects .project-container:nth-of-type(even) .web {
+        float: right;
+    }
+
+    section.myprojects .project-container:nth-of-type(even) .project-description h2 {
+        margin: 0 0 0 auto;
+        padding-left: 0;
+    }
+}
+
+
+/*SECTION 4 MOTTO*/
+
+.motto-background {
+    height: 100vh;
+    background-image: url("/images/motto.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.motto .motto-background {
+    font-family: 'Saira', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.motto .motto-background .container {
+
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.motto .motto-background h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 12%;
+}
+
+.motto .motto-background p {
+    font-size: 18px;
+    line-height: 130%;
+    padding: 30% 2% 7% 2%;
+}
+
+.motto .motto-background h2 {
+    font-size: 11px;
+}
+
+@media (orientation: landscape) {
+    .motto .motto-background h1 {
+        padding-top: 10%;
+    }
+
+    .motto .motto-background p {
+        font-size: 18px;
+        line-height: 130%;
+        padding: 10% 2% 4% 2%;
+    }
+}
+
+/* od 360x640*/
+@media (min-width: 360px) and (min-height: 640px) {
+    .motto .motto-background h1 {
+        font-size: 28px;
+        text-transform: uppercase;
+        padding-top: 20%;
+    }
+
+    .motto .motto-background p {
+        font-size: 20px;
+        line-height: 130%;
+        padding: 30% 4% 15% 4%;
+    }
+
+    .motto .motto-background h2 {
+        font-size: 14px;
+    }
+}
+
+@media (min-height: 823px) {
+    .motto .motto-background h1 {
+        font-size: 34px;
+        text-transform: uppercase;
+        padding-top: 30%;
+    }
+
+    .motto .motto-background p {
+        font-size: 24px;
+        line-height: 130%;
+        padding: 30% 4% 22% 4%;
+    }
+
+    .motto .motto-background h2 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .motto .motto-background h1 {
+        font-size: 48px;
+        text-transform: uppercase;
+        padding-top: 27%;
+    }
+
+    .motto .motto-background p {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 130%;
+        padding: 10% 15% 6% 15%;
+    }
+
+    .motto .motto-background h2 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .motto .motto-background h1 {
+        padding-top: 17%;
+    }
+
+    @media (min-width: 1366px) and (orientation: landscape) {
+        .motto .motto-background h1 {
+            font-size: 62px;
+        }
+
+        .motto .motto-background p {
+            font-size: 34px;
+        }
+
+        .motto .motto-background h2 {
+            font-size: 24px;
+        }
+    }
+}
+
+/*    SEKCJA 5 O MNIE*/
+
+section.aboutme h1 {
+    padding: 8% 2%;
+    text-align: center;
+    font-family: 'Saira';
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+section.aboutme .gallery .pic {
+    position: relative;
+
+}
+
+section.aboutme .gallery .pic p {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -23px;
+    font-size: 40px;
+    font-family: 'Saira', sans-serif;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.2s;
+
+
+}
+
+
+
+section.aboutme .gallery .pic:hover p {
+
+    color: black;
+
+
+}
+
+section.aboutme .gallery .pic:hover img {
+
+    opacity: 0.45;
+
+
+}
+
+section.aboutme .gallery .pic img {
+    display: block;
+    width: 100%;
+    transition: 1.2s;
+}
+
+
+@media(orientation: landscape) {
+    section.aboutme h1 {
+        font-size: 28px;
+    }
+
+}
+
+@media(min-width: 360px) and (orientation: portrait) {
+    section.aboutme h1 {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 411px) and (orientation: portrait) {
+    section.aboutme h1 {
+        font-size: 22px;
+    }
+}
+
+@media(min-width:768px) {
+    section.aboutme h1 {
+        font-size: 40px;
+    }
+}
+
+@media(min-width:768px) and (orientation:landscape) {
+    section.aboutme h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    section.aboutme h1 {
+        padding: 8% 2%;
+        font-size: 60px;
+    }
+
+    section.aboutme .gallery .pic {
+        float: left;
+        width: 50%;
+    }
+
+    section.aboutme .gallery .pic img {
+        display: block;
+        width: 100%;
+    }
+
+}

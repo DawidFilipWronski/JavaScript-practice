@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 10px;
+    font-family: oswald, sans-serif;
+}
+
+nav {
+    /*    max-width: 1400px;*/
+    padding: 30px 50px;
+    font-size: 2rem;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: #555;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #222;
+    border-bottom: solid 2px #222;
+}
+
+nav a.reservation {
+    padding: 7px 40px;
+    border: solid 2px #555;
+    margin-left: 110px;
+    letter-spacing: 2px;
+    transition: 0.25s;
+}
+
+nav a.reservation:hover {
+    background-color: steelblue;
+    color: #EEE;
+    border-color: steelblue;
+}
+
+/*header*/
+header {
+    height: 50vh;
+    background-image: url(auto2.jpg);
+    background-size: cover;
+
+
+}
+
+header h1 {
+    line-height: 50vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 40%);
+    font-size: 6rem;
+    color: #DDD;
+    text-transform: uppercase;
+
+}
+
+main h1.description {
+    max-width: 1440px;
+    text-align: center;
+    margin: 40px 40px;
+    line-height: 150%;
+
+}
+
+main section.features {
+    font-size: 0;
+    margin: 60px 0 0 0;
+
+}
+
+main div.feature {
+    display: inline-block;
+    width: 33.33%;
+    font-size: 1.4rem;
+    text-align: center;
+
+
+}
+
+main div.image {
+    background-color: dimgray;
+    height: 30vh;
+    margin: 0 30px;
+}
+
+footer p {
+    height: 10vh;
+    background-color: #222;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 10vh;
+}

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("manhattan.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-transform: uppercase;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-wrapper {
+    position: absolute;
+    background-color: #fff;
+    /* max-width: 20%; */
+    padding: 6px;
+    top: 30px;
+    left: 50px;
+}
+
+
+.logo {
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 140%;
+
+}
+
+.logo span {
+    color: royalblue;
+}
+
+.logo-wrapper h1 {
+    font-size: 26px;
+    letter-spacing: 15px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-top: 8px;
+
+}
+
+
+
+.logo-wrapper+h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 70px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+
+
+.about {
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 4px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+p {
+    max-width: 1400px;
+    width: 80%;
+    margin: 50px auto;
+    text-align: justify;
+    line-height: 170%;
+}
+
+/* ----MEDIA QUERIES---- */
+
+
+@media (max-width: 415px) {
+    header {
+        padding-top: 10px;
+    }
+
+    .logo-wrapper {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .logo-wrapper+h1 {
+        top: 40%;
+        font-size: 40px;
+        line-height: 140%;
+        padding: 70px 0;
+        background-color: rgba(255, 255, 255, .3);
+        color: #222;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 150%;
+        width: 90%;
+    }
+
+    .about {
+        text-align: center;
+        left: 15%;
+        right: 15%;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .logo-wrapper h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .logo-wrapper h1 {
+        font-size: 16px;
+    }
+
+    .logo-wrapper+h1 {
+        top: 27%;
+        font-size: 30px;
+    }
+
+    .about {
+        font-size: 24px;
+        bottom: 70px;
+    }
+
+}

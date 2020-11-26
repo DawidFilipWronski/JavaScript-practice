@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <style>
+        .ptest{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        max-width: 70%;
+        transition: 1s;
+    }
+     .border{
+        border: solid 20px black;
+    }
+
+    /* button:nth-of-type(1):hover ~ p{
+        
+        font-size: 80px;
+    }
+    button:nth-of-type(2):hover ~ p{
+        font-size: 20px;
+     
+    } 
+    button:nth-of-type(3):hover ~ p{
+        border: solid 10px black;
+
+    } */
+
+
+   
+    
+    </style>
+    
+</head>
+<body>
+    <button>zwieksz 2x</button>
+    <button>zmniejsz 2x</button>
+    <button class="test">obramowanie</button>
+
+    <p class= "ptest">teks testowy</p>
+    <script>
+
+            $('.test').click(function(){
+                $('.ptest').toggleClass("border");
+            })
+    
+        </script>
+    
+</body>
+</html>

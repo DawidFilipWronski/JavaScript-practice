@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.picture{
+    position:relative;
+    width: 160vh;
+    height: 90vh;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: lightskyblue;
+}
+/* góra */
+
+img{
+    display: none;
+}
+img:first-child {
+    display: block;
+    position:absolute;
+    height: 100%;
+    top: 12%;
+    left: 3%;
+    z-index: 0;
+}
+
+img:nth-child(2) {
+    display: block;
+    position:absolute;
+    height: 100%;
+    top: 25%;
+    left: 0;
+    z-index: 1;
+}
+
+img:nth-child(3) {
+    display: block;
+    position:absolute;
+    height: 100%;
+    top:38%;
+    right:0;
+    z-index: 1;
+}
+img:nth-child(4) {
+    display: block;
+    position:absolute;
+    height: 100%;
+    top:30%;
+    right:0;
+    z-index: 1;
+}
+img:nth-child(5) {
+    display: block;
+    position:absolute;
+    height: 100%;
+    top:38%;
+    right:0;
+    z-index: 1;
+}
+img:nth-child(6) {
+    display: block;
+    position:absolute;
+    height: 100%;
+    top:63%;
+    right:0;
+    z-index: 1;
+}
+img:nth-child(7) {
+    display: block;
+    position:absolute;
+    height: 15%;
+    top:5%;
+    left:7%;
+    z-index: 1;
+}
+img:nth-child(8) {
+    display: block;
+    position:absolute;
+    height: 7%;
+    top:10%;
+    left:-8%;
+    z-index: 1;
+}
+img:nth-child(9) {
+    display: block;
+    position:absolute;
+    height: 10%;
+    top:6%;
+    right:0%;
+    z-index: 1;
+}
+img:nth-child(10) {
+    display: block;
+    position:absolute;
+    height: 48%;
+    top:14%;
+    right:0%;
+    z-index: 1;
+}
+img:nth-child(11) {
+    display: block;
+    position:absolute;
+    height: 28%;
+    bottom:14%;
+    left:6%;
+    z-index: 1;
+}

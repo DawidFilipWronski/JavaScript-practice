@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    p, span{
+        display: inline-block;
+    }
+    span{
+        letter-spacing: 20px;
+        position: relative;
+        
+    }
+    span::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        animation: loading 4s linear infinite;
+    }
+    div{
+        font-size: 150px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+       
+    }
+    @keyframes loading{
+        24%{
+            left: 0;
+        }
+        25%{
+            left: 33.3%;
+        }
+        49%{
+            left: 33.3%;
+        }
+        50%{
+            left: 66.6%
+        }
+        74%{
+            left: 66.6%;
+        }
+        75%{
+            left: 99.9%;
+        }
+        99.9%{
+            left: 99.9%;
+        }
+        
+
+        
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div>
+        <p>Napis</p>
+        <span>...</span>
+    </div>
+</body>
+</html>

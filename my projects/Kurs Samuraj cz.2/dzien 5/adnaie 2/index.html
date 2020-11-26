@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        button:first-of-type{
+            width: 180px;
+            position:absolute;
+            top: 20%;
+            left: 10%;
+            font-size: 24px;
+            text-transform: uppercase;
+            border: none; 
+            padding-bottom: 10px;          
+        }
+        button span{
+            position: absolute;
+            bottom: 0;
+            left:0;
+            width: 0;
+            height: 3px;
+            background-color: black;
+            transition: .2s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+        button:nth-of-type(2){
+            width: 180px;
+            position:absolute;
+            top: 40%;
+            left: 10%;
+            font-size: 24px;
+            text-transform: uppercase;
+            border: 2px solid black;
+            line-height: 50px;
+            background-color: transparent;
+            transition: .2s;
+            
+            
+        }
+        button:nth-of-type(2):hover{
+            color: white;
+        }
+        
+        button:nth-of-type(2) span{
+            width: 100%;
+            height: 0;
+            transition: .6s;
+            z-index: -1;
+        }
+        button:nth-of-type(2):hover span{
+            background-color: black;
+            height: 100%;
+           
+        }
+
+
+
+        button:nth-of-type(3){
+            width: 180px;
+            position:absolute;
+            top: 50%;
+            left: 10%;
+            font-size: 24px;
+            text-transform: uppercase;
+            border: 2px solid black;
+            line-height: 50px;   
+            background-color:transparent;        
+        }
+        button:nth-of-type(3) span{
+            position: absolute;
+            width: auto;
+            height: auto;
+            top:100%;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: black;
+            transition: 1s;
+            z-index: -1;
+            }        
+        button:nth-of-type(3):hover span{
+            top: 0;            
+        }
+        button:nth-of-type(3):hover{
+            color: white;          
+        }
+        button:nth-of-type(4){
+
+            width: 180px;
+            position:absolute;
+            top: 70%;
+            left: 10%;
+            font-size: 24px;
+            line-height: 60px;
+            text-transform: uppercase;
+            border: 2px solid black;   
+                   
+        }
+        button:nth-of-type(4) span{
+            position: absolute;
+            transform: translateY(50%);
+            width: auto;
+            height: 30%;
+            bottom: 50%;
+            left: 100%;
+            right: 0;
+            background-color: rgb(224, 62, 62);
+            transition-property: left, height;
+            transition-duration: .1s, .1s;
+            transition-delay: 0s, .1s;
+        }
+
+        button:nth-of-type(4) p{
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            line-height: 60px;
+            background-color: transparent;
+            z-index: 1;            
+        }
+        button:nth-of-type(4):hover span{
+            left: 0;
+            height: 100%;           
+        }
+        button:nth-of-type(5){
+            width: 180px;
+            position:absolute;
+            top: 85%;
+            left: 10%;
+            font-size: 24px;
+            text-transform: uppercase;
+            line-height: 50px;
+            border: none;
+        }
+
+        button:nth-of-type(5)::after{
+            content:'';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: black;  
+            transition: .3s;          
+        }
+        button:nth-of-type(5):hover::after{
+            width: 100%;
+        }
+        
+        
+
+        
+       
+        
+    
+    </style>
+</head>
+<body>
+    <button>przycisk
+        <span></span>
+    </button>
+    <button>przycisk
+        <span></span>
+    </button>
+    <button>przycisk
+        <span></span>
+    </button>
+    <button>
+            <p>przycisk</p>
+        <span></span>        
+    </button>
+    <button class = "animate">
+        <p>przycisk</p>
+    </button>
+    
+</body>
+</html>

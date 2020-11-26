@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 70vw;
+            height: 60vh;
+            background-color: violet;
+            color: black;
+            font-family: arial;
+            font-size: 70px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+        }
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-350%, -50%);
+        }
+        span:nth-child(1){
+            animation: tanio 4s 4s infinite;
+        }
+        span:nth-child(2){
+            animation: tanio 4s 8s  infinite;
+        }
+        span:nth-child(3){
+            animation: tanio 4s 12s  infinite;
+        }
+        
+
+        @keyframes tanio{
+            25%{
+                transform: translate(-50%, -50%);
+            }
+            60%{
+                transform: translate(-50%, -50%);
+
+            }
+            100%{
+                transform: translate(350%, -50%);
+            }
+        }
+        @keyframes szybko{
+            25%{
+                transform: translate(-50%, -50%);
+            }
+            60%{
+                transform: translate(-50%, -50%);
+
+            }
+            100%{
+                transform: translate(350%, -50%);
+            }
+        }
+        @keyframes srednio{
+            25%{
+                transform: translate(-50%, -50%);
+            }
+            60%{
+                transform: translate(-50%, -50%);
+
+            }
+            100%{
+                transform: translate(350%, -50%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <span>tanio</span>
+        <span>szybko</span>
+        <span>srednio</span>
+    </div>
+    
+</body>
+</html>

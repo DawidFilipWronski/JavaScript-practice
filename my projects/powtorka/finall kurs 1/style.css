@@ -1,0 +1,485 @@
+/* font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 10px;
+}
+
+.hello-header {
+
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #ddd;
+    text-align: center;
+    background-color: rgb(37, 148, 211);
+    text-transform: uppercase;
+
+}
+
+.hello,
+.i-am {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.hello {
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+    font-size: 4rem;
+
+}
+
+.i-am {
+    font-size: 2rem;
+}
+
+.i-am+.i-am {
+    font-weight: normal;
+
+}
+
+.see-my-work {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border: solid 1px;
+    font-size: 1.2rem;
+    line-height: 300%;
+    text-align: center;
+    font-family: 'Saira', sans-serif;
+    text-decoration: none;
+    color: #ddd;
+
+}
+
+.hello-header img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45vh;
+}
+
+.skills-wrapper {
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.skills-wrapper h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    line-height: 130%;
+}
+
+.skills-wrapper img {
+    width: 200px;
+    height: 120px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.skills-wrapper p {
+    font-size: 1.2rem;
+    font-family: 'Saira', sans-serif;
+    font-weight: lighter;
+}
+
+.first-skill {
+    font-size: 2.4rem;
+    margin-top: 5rem;
+    padding: 0 2rem;
+
+}
+
+.second-skill {
+    font-size: 1.8rem;
+    padding: 0 4rem 2.5rem 4rem;
+}
+
+.skill-description {
+    margin: 0 2rem;
+}
+
+.third-skill {
+    font-size: 1.8rem;
+    padding: 0 2rem;
+}
+
+.skill-summary {
+    margin: 2.5rem 2rem;
+}
+
+
+/* ----PORTFOLIO-----
+   ----PORTFOLIO-----
+   ----PORTFOLIO----- */
+.im-proud,
+.project-name {
+    text-transform: uppercase;
+}
+
+.img-wrapper,
+.article-wrapper {
+    height: 40vh;
+}
+
+.portfolio {
+    background-color: rgb(23, 23, 23);
+    padding-bottom: 3rem;
+}
+
+.im-proud {
+    padding: 3rem;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'saira condensed', sans-serif;
+    color: #fff;
+}
+
+
+.img-wrapper {
+
+    background-color: #fff;
+}
+
+.first-project {
+    margin-bottom: 3rem;
+}
+
+.first-project .img-wrapper {
+    background-image: url(img/portfolio3.jpg);
+    background-size: auto 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+.article-wrapper {
+
+    font-family: 'saira', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.first-project .article-wrapper {
+    background-color: rgb(251, 54, 34);
+}
+
+.second-project .img-wrapper {
+    background-image: url(img/portfolio1.jpg);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second-project .article-wrapper {
+    background-color: rgb(11, 90, 171);
+}
+
+
+.project-name {
+    padding: 3rem 0 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
+.project-description {
+    margin-right: 10%;
+    border-top: 0.1rem solid #fff;
+    padding: 1.5rem 0 0 2rem;
+    font-size: 1.2rem;
+}
+
+/* ----MOTTO----
+   ----MOTTO----
+   ----MOTTO---- */
+.motto-content,
+.motto-author {
+    font-weight: normal;
+    font-family: 'saira', sans-serif;
+}
+
+.motto-title,
+.motto-author {
+    padding-top: 5rem;
+}
+
+.motto-background {
+    height: 100vh;
+    background-image: url("img/motto.jpg");
+    background-size: cover;
+    background-position: 20% 0;
+    background-repeat: no-repeat;
+}
+
+.motto-wrapper {
+    height: 100%;
+    background-color: rgba(39, 99, 251, 0.3);
+    color: #fff;
+    text-align: center;
+}
+
+.motto-title {
+    font-family: 'saira condensed', sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.motto-content {
+    padding: 12rem 3rem 0 3rem;
+    font-size: 1.8rem;
+}
+
+.motto-author {
+    padding-top: 4rem;
+    font-size: 1.1rem;
+}
+
+/* ---HOBBY---
+   ---HOBBY---
+   ---HOBBY--- */
+.hobby {
+    text-align: center;
+}
+
+.hobby-title {
+    padding: 4rem 0 4rem 0;
+    font-size: 2.4rem;
+    font-family: 'saira condensed';
+    text-transform: uppercase;
+}
+
+.hobby>.img-wrapper:nth-of-type(1),
+.hobby>.img-wrapper:nth-of-type(2),
+.hobby>.img-wrapper:nth-of-type(3),
+.hobby>.img-wrapper:nth-of-type(4) {
+    background-size: cover;
+}
+
+.hobby>.img-wrapper:nth-of-type(1) {
+    background-image: url("img/hobby1.jpg");
+}
+
+.hobby>.img-wrapper:nth-of-type(2) {
+    background-image: url("img/hobby2.jpg");
+}
+
+.hobby>.img-wrapper:nth-of-type(3) {
+    background-image: url("img/hobby3.jpg");
+}
+
+.hobby>.img-wrapper:nth-of-type(4) {
+    background-image: url("img/hobby4.jpg");
+}
+
+/* ---CONTACT---
+---CONTACT---
+---CONTACT--- */
+.contact-with-me {
+    font-family: 'saira condensed', sans-serif;
+}
+
+.send-message {
+    font-family: serif;
+}
+
+.contact-with-me,
+.send-message {
+    text-transform: uppercase;
+}
+
+.send-message,
+.contact input {
+    font-family: 'saira';
+}
+
+.contact {
+    background-color: rgb(23, 23, 23);
+    text-align: center;
+    color: white;
+}
+
+.contact-with-me {
+    padding: 4rem 0;
+    font-size: 2.4rem;
+}
+
+.contact input {
+    font-size: 1.2rem;
+    display: block;
+    width: 80%;
+    height: 3.6rem;
+    margin: 0 auto 1rem auto;
+    padding-left: 1rem;
+}
+
+.contact .message-content {
+    height: 10rem;
+}
+
+.send-message {
+    width: 80%;
+    height: 4rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.contact-info {
+    font-family: 'saira';
+    font-size: 1.4rem;
+    margin-top: 6rem;
+}
+
+.email,
+.phone-number,
+.facebook,
+.twitter,
+.linkedin {
+    width: 70%;
+    line-height: 3.6rem;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 3.6rem;
+    text-align: left;
+    padding-bottom: 3rem;
+    padding-left: 6rem;
+}
+
+.email {
+    background-image: url("img/contact1.png");
+}
+
+.phone-number {
+    background-image: url("img/contact2.png");
+}
+
+.facebook {
+    background-image: url("img/contact3.png");
+}
+
+.twitter {
+    background-image: url("img/contact4.png");
+}
+
+.linkedin {
+    background-image: url("img/contact5.png");
+}
+
+footer {
+    background-color: rgb(38, 151, 215);
+}
+
+footer .footer-text {
+    font-family: 'saira';
+    font-size: 1.6rem;
+    line-height: 8rem;
+    text-align: center;
+}
+
+
+
+
+
+@media(min-width: 360px) {
+    html {
+        font-size: 12px;
+    }
+
+    .skill-description {
+        margin: 0 1.8rem;
+    }
+
+    .im-proud {
+        font-size: 3rem;
+    }
+
+
+}
+
+
+
+@media(min-width: 411px) {
+    html {
+        font-size: 14.5px;
+    }
+
+    .see-my-work {
+        border: solid 2px;
+    }
+
+    .im-proud {
+        padding: 2rem;
+    }
+
+    .img-wrapper,
+    .article-wrapper {
+        height: 45vh;
+    }
+
+    .hobby-title {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .l-s {
+        letter-spacing: 0.5rem;
+    }
+
+
+}
+
+@media (min-width: 375px) and (min-height: 810px) {
+    html {
+        font-size: 15px;
+
+    }
+
+    .see-my-work {
+        width: 70%;
+    }
+
+    .hello-header img {
+        position: absolute;
+        bottom: 0;
+        right: -10%;
+        width: 45vh;
+    }
+
+    .second-skill {
+        padding: 0 2rem 2.5rem 2rem;
+    }
+
+    .third-skill {
+        font-size: 1.8rem;
+        padding: 0 1.5rem;
+    }
+
+    .second-project .img-wrapper {
+
+        background-position: 23% 0;
+
+    }
+
+    .email,
+    .phone-number,
+    .facebook,
+    .twitter,
+    .linkedin {
+        width: 80%;
+        padding-left: 5rem;
+    }
+
+
+}

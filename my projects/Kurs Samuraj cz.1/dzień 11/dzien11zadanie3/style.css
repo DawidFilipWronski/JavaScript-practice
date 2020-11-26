@@ -1,0 +1,17 @@
+div.profile {
+    margin: 0 auto;
+    width: 800px;
+    position: relative;
+    background-color: #ccc;
+
+}
+
+img.avatar {
+    border-radius: 50%;
+}
+
+div.answer {
+    position: absolute;
+    left: 25%;
+    top: 0;
+}

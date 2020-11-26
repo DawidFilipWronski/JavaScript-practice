@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 15px 50px;
+    text-align: right;
+
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-size: 1.4rem;
+    color: #EEE;
+    background-color: #BBB;
+    text-transform: uppercase;
+    transition: 2s;
+}
+
+nav a:hover {
+    box-shadow: 0 2px black;
+    transition: 2s;
+}
+
+a + a + a + a {
+
+    margin-left: 150px;
+}

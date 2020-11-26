@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+nav {
+    font-size: 0;
+    /*    height: 200px;*/
+    background-color: darkcyan;
+}
+
+nav a {
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+
+}
+
+nav a.btn1 {
+    background-color: lightcoral;
+}
+
+nav a.btn2 {
+    background-color: lightgreen;
+}
+
+nav a.btn3 {
+    background-color: lightsalmon;
+}
+
+nav a.btn4 {
+    background-color: lightblue;
+}
+
+nav a:hover {
+    background-color: black;
+    color: lightcyan;
+    border-bottom: 5px solid yellow;
+
+
+}

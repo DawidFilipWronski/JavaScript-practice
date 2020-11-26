@@ -1,0 +1,33 @@
+body{
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3,250px);
+}
+
+.jeden , .dziewiec{
+  background-color: red;
+}
+.dwa, .osiem{
+  background-color: lightblue;
+}
+.trzy, .siedem{
+  background-color: lightgreen;
+}
+
+.cztery, .szesc{
+  background-color: lightyellow;
+}
+.piec{
+  background-color: lightpink;
+}
+.jeden{
+  grid-area: 1/1/2/4;
+}
+.dwa{
+  grid-area: 2/3/3/4;
+}
+li{
+  display: inline;
+  list-style: none;
+  
+}

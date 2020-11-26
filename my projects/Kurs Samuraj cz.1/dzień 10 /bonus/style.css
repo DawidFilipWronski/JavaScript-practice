@@ -1,0 +1,52 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.board {
+    width: 400px;
+    border: 2px solid black;
+    margin: 100px auto 0;
+}
+
+.board div {
+    width: 80px;
+    height: 80px;
+    float: left;
+    background-color: white;
+}
+
+.board div:nth-of-type(2n) {
+    background-color: black;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.board {
+    width: 400px;
+    border: 2px solid black;
+    margin: 100px auto 0;
+    font-size: 0;
+}
+
+.board div {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+.board div:nth-of-type(2n) {
+    background-color: black;
+}

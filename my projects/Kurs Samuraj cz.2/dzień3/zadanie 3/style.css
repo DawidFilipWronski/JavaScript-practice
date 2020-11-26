@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.board{
+    width: 30vw;
+    border: solid 10px black;
+    margin-left: calc(50% - 15vw - 10px);
+}
+
+span{
+    float: left;
+    width: 50%;
+    height: 15vw;
+}
+span:first-child,
+span:last-child{
+    background-color: red;
+}
+h1{
+    text-align: center;
+    margin-top: 10vw;
+}

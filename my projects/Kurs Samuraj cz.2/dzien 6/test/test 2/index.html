@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rbg(9,9,25);
+        }
+        .feature{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 25vw;
+            height: 60vh;
+            border-left: 14px solid rgb(72,0,236);
+            border-top: 14px solid rgb(72,0,236);
+            border-right: 14px solid rgb(203,0,82);
+            border-bottom: 14px solid rgb(203,0,82);
+            
+        }
+        .half:nth-of-type(1){
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 51%;
+            height: 100%;
+            background-color: rgb(17,17,34);
+        }
+        .half:nth-of-type(2){
+            position: absolute;
+            top:0;
+            left: 50%;
+            width: 50%;
+            height: 100%;
+            background-color: rgb(9,9,25);
+        }
+    </style>
+</head>
+<body>
+    <div class="feature">
+        <span class="half"></span>
+        <span class="half"></span>
+        <span class="shade"></span>
+        <span class="shade"></span>
+        <span class="shade"></span>
+        <span class="shade"></span>
+        <p></p>
+    </div>
+</body>
+</html>
